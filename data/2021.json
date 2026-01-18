@@ -1,0 +1,820 @@
+{
+  "IT": {
+    "1": {
+      "HS3152": { "name": "Professional English - I", "credit": 3 },
+      "MA3151": { "name": "Matrices and Calculus", "credit": 4 },
+      "PH3151": { "name": "Engineering Physics", "credit": 3 },
+      "CY3151": { "name": "Engineering Chemistry", "credit": 3 },
+      "GE3151": {
+        "name": "Problem Solving and Python Programming",
+        "credit": 3
+      },
+      "GE3152": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "GE3171": {
+        "name": "Problem Solving and Python Programming Laboratory",
+        "credit": 2
+      },
+      "BS3171": { "name": "Physics and Chemistry Laboratory", "credit": 2 },
+      "GE3172": { "name": "English Laboratory", "credit": 1 }
+    },
+    "2": {
+      "HS3252": { "name": "Professional English - II", "credit": 2 },
+      "MA3251": { "name": "Statistics and Numerical Methods", "credit": 4 },
+      "PH3256": { "name": "Physics for Information Science", "credit": 3 },
+      "BE3251": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "GE3251": { "name": "Engineering Graphics", "credit": 4 },
+      "CS3251": { "name": "Programming in C", "credit": 3 },
+      "GE3252": {
+        "name": "Tamils and Technology / தமிழரும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "NCC1": { "name": "NCC Credit Course Level 1", "credit": 2 },
+      "GE3271": { "name": "Engineering Practices Laboratory", "credit": 2 },
+      "CS3271": { "name": "Programming in C Laboratory", "credit": 2 },
+      "GE3272": {
+        "name": "Communication Laboratory / Foreign Language",
+        "credit": 2
+      }
+    },
+    "3": {
+      "MA3354": { "name": "Discrete Mathematics", "credit": 4 },
+      "CS3351": {
+        "name": "Digital Principles and Computer Organization",
+        "credit": 4
+      },
+      "CS3352": { "name": "Foundations of Data Science", "credit": 3 },
+      "CD3291": { "name": "Data Structures and Algorithms", "credit": 3 },
+      "CS3391": { "name": "Object Oriented Programming", "credit": 3 },
+      "CD3281": {
+        "name": "Data Structures and Algorithms Laboratory",
+        "credit": 2
+      },
+      "CS3381": {
+        "name": "Object Oriented Programming Laboratory",
+        "credit": 1.5
+      },
+      "CS3361": { "name": "Data Science Laboratory", "credit": 2 },
+      "GE3361": { "name": "Professional Development", "credit": 1 }
+    },
+    "4": {
+      "CS3452": { "name": "Theory of Computation", "credit": 3 },
+      "CS3491": {
+        "name": "Artificial Intelligence and Machine Learning",
+        "credit": 4
+      },
+      "CS3492": { "name": "Database Management Systems", "credit": 3 },
+      "IT3401": { "name": "Web Essentials", "credit": 4 },
+      "CS3451": { "name": "Introduction to Operating Systems", "credit": 3 },
+      "GE3451": {
+        "name": "Environmental Sciences and Sustainability",
+        "credit": 2
+      },
+      "NCC2": { "name": "NCC Credit Course Level 2", "credit": 3 },
+      "CS3461": { "name": "Operating Systems Laboratory", "credit": 1.5 },
+      "CS3481": {
+        "name": "Database Management Systems Laboratory",
+        "credit": 1.5
+      }
+    },
+    "5": {
+      "CS3591": { "name": "Computer Networks", "credit": 4 },
+      "IT3501": { "name": "Full Stack Web Development", "credit": 3 },
+      "CS3551": { "name": "Distributed Computing", "credit": 3 },
+      "CS3691": { "name": "Embedded Systems and IoT", "credit": 4 },
+      "PE1": { "name": "Professional Elective I", "credit": 3 },
+      "PE2": { "name": "Professional Elective II", "credit": 3 },
+      "MC1": { "name": "Mandatory Course I (Non-credit)", "credit": 1 },
+      "IT3511": { "name": "Full Stack Web Development Laboratory", "credit": 2 }
+    },
+    "6": {
+      "CCS356": { "name": "Object Oriented Software Engineering", "credit": 4 },
+      "OE1": { "name": "Open Elective I", "credit": 3 },
+      "PE3": { "name": "Professional Elective III", "credit": 3 },
+      "PE4": { "name": "Professional Elective IV", "credit": 3 },
+      "PE5": { "name": "Professional Elective V", "credit": 3 },
+      "PE6": { "name": "Professional Elective VI", "credit": 3 },
+      "MC2": { "name": "Mandatory Course II (Non-credit)", "credit": 1 },
+      "NCC3": { "name": "NCC Credit Course Level 3", "credit": 3 },
+      "IT3681": {
+        "name": "Mobile Applications Development Laboratory",
+        "credit": 3
+      }
+    },
+    "7": {
+      "GE3791": { "name": "Human Values and Ethics", "credit": 2 },
+      "ELM": { "name": "Elective - Management", "credit": 3 },
+      "OE2": { "name": "Open Elective II", "credit": 3 },
+      "OE3": { "name": "Open Elective III", "credit": 3 },
+      "OE4": { "name": "Open Elective IV", "credit": 3 },
+      "IT3711": { "name": "Summer Internship", "credit": 2 }
+    },
+    "8": {
+      "IT3811": { "name": "Project Work / Internship", "credit": 10 }
+    }
+  },
+
+  "CSE": {
+    "1": {
+      "HS3152": { "name": "Professional English - I", "credit": 3 },
+      "MA3151": { "name": "Matrices and Calculus", "credit": 4 },
+      "PH3151": { "name": "Engineering Physics", "credit": 3 },
+      "CY3151": { "name": "Engineering Chemistry", "credit": 3 },
+      "GE3151": {
+        "name": "Problem Solving and Python Programming",
+        "credit": 3
+      },
+      "GE3152": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "GE3171": {
+        "name": "Problem Solving and Python Programming Laboratory",
+        "credit": 2
+      },
+      "BS3171": { "name": "Physics and Chemistry Laboratory", "credit": 2 },
+      "GE3172": { "name": "English Laboratory", "credit": 1 }
+    },
+    "2": {
+      "HS3252": { "name": "Professional English - II", "credit": 2 },
+      "MA3251": { "name": "Statistics and Numerical Methods", "credit": 4 },
+      "PH3256": { "name": "Physics for Information Science", "credit": 3 },
+      "BE3251": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "GE3251": { "name": "Engineering Graphics", "credit": 4 },
+      "CS3251": { "name": "Programming in C", "credit": 3 },
+      "GE3252": {
+        "name": "Tamils and Technology / தமிழரும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "NCC1": { "name": "NCC Credit Course Level 1", "credit": 2 },
+      "GE3271": { "name": "Engineering Practices Laboratory", "credit": 2 },
+      "CS3271": { "name": "Programming in C Laboratory", "credit": 2 },
+      "GE3272": {
+        "name": "Communication Laboratory / Foreign Language",
+        "credit": 2
+      }
+    },
+    "3": {
+      "MA3354": { "name": "Discrete Mathematics", "credit": 4 },
+      "CS3351": {
+        "name": "Digital Principles and Computer Organization",
+        "credit": 4
+      },
+      "CS3352": { "name": "Foundations of Data Science", "credit": 3 },
+      "CS3301": { "name": "Data Structures", "credit": 3 },
+      "CS3391": { "name": "Object Oriented Programming", "credit": 3 },
+      "CS3311": { "name": "Data Structures Laboratory", "credit": 1.5 },
+      "CS3381": {
+        "name": "Object Oriented Programming Laboratory",
+        "credit": 1.5
+      },
+      "CS3361": { "name": "Data Science Laboratory", "credit": 2 },
+      "GE3361": { "name": "Professional Development", "credit": 1 }
+    },
+    "4": {
+      "CS3452": { "name": "Theory of Computation", "credit": 3 },
+      "CS3491": {
+        "name": "Artificial Intelligence and Machine Learning",
+        "credit": 4
+      },
+      "CS3492": { "name": "Database Management Systems", "credit": 3 },
+      "CS3401": { "name": "Algorithms", "credit": 4 },
+      "CS3451": { "name": "Introduction to Operating Systems", "credit": 3 },
+      "GE3451": {
+        "name": "Environmental Sciences and Sustainability",
+        "credit": 2
+      },
+      "NCC2": { "name": "NCC Credit Course Level 2", "credit": 3 },
+      "CS3461": { "name": "Operating Systems Laboratory", "credit": 1.5 },
+      "CS3481": {
+        "name": "Database Management Systems Laboratory",
+        "credit": 1.5
+      }
+    },
+    "5": {
+      "CS3591": { "name": "Computer Networks", "credit": 4 },
+      "CS3501": { "name": "Compiler Design", "credit": 4 },
+      "CB3491": { "name": "Cryptography and Cyber Security", "credit": 3 },
+      "CS3551": { "name": "Distributed Computing", "credit": 3 },
+      "PE1": { "name": "Professional Elective I", "credit": 3 },
+      "PE2": { "name": "Professional Elective II", "credit": 3 },
+      "MC1": { "name": "Mandatory Course I (Non-credit)", "credit": 1 }
+    },
+    "6": {
+      "CCS356": { "name": "Object Oriented Software Engineering", "credit": 4 },
+      "CS3691": { "name": "Embedded Systems and IoT", "credit": 4 },
+      "OE1": { "name": "Open Elective I", "credit": 3 },
+      "PE3": { "name": "Professional Elective III", "credit": 3 },
+      "PE4": { "name": "Professional Elective IV", "credit": 3 },
+      "PE5": { "name": "Professional Elective V", "credit": 3 },
+      "PE6": { "name": "Professional Elective VI", "credit": 3 },
+      "MC2": { "name": "Mandatory Course II (Non-credit)", "credit": 1 },
+      "NCC3": { "name": "NCC Credit Course Level 3", "credit": 3 }
+    },
+    "7": {
+      "GE3791": { "name": "Human Values and Ethics", "credit": 2 },
+      "ELM": { "name": "Elective - Management", "credit": 3 },
+      "OE2": { "name": "Open Elective II", "credit": 3 },
+      "OE3": { "name": "Open Elective III", "credit": 3 },
+      "OE4": { "name": "Open Elective IV", "credit": 3 },
+      "CS3711": { "name": "Summer Internship", "credit": 2 }
+    },
+    "8": {
+      "CS3811": { "name": "Project Work / Internship", "credit": 10 }
+    }
+  },
+
+  "EEE": {
+    "1": {
+      "HS3152": { "name": "Professional English - I", "credit": 3 },
+      "MA3151": { "name": "Matrices and Calculus", "credit": 4 },
+      "PH3151": { "name": "Engineering Physics", "credit": 3 },
+      "CY3151": { "name": "Engineering Chemistry", "credit": 3 },
+      "GE3151": {
+        "name": "Problem Solving and Python Programming",
+        "credit": 3
+      },
+      "GE3152": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "GE3171": {
+        "name": "Problem Solving and Python Programming Laboratory",
+        "credit": 2
+      },
+      "BS3171": { "name": "Physics and Chemistry Laboratory", "credit": 2 },
+      "GE3172": { "name": "English Laboratory", "credit": 1 }
+    },
+    "2": {
+      "HS3252": { "name": "Professional English - II", "credit": 2 },
+      "MA3251": { "name": "Statistics and Numerical Methods", "credit": 4 },
+      "PH3202": { "name": "Physics for Electrical Engineering", "credit": 3 },
+      "BE3255": {
+        "name": "Basic Civil and Mechanical Engineering",
+        "credit": 3
+      },
+      "GE3251": { "name": "Engineering Graphics", "credit": 4 },
+      "EE3251": { "name": "Electric Circuit Analysis", "credit": 4 },
+      "GE3252": {
+        "name": "Tamils and Technology / தமிழரும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "NCC1": { "name": "NCC Credit Course Level 1", "credit": 2 },
+      "GE3271": { "name": "Engineering Practices Laboratory", "credit": 2 },
+      "EE3271": { "name": "Electric Circuits Laboratory", "credit": 2 },
+      "GE3272": {
+        "name": "Communication Laboratory / Foreign Language",
+        "credit": 2
+      }
+    },
+    "3": {
+      "MA3303": { "name": "Probability and Complex Functions", "credit": 4 },
+      "EE3301": { "name": "Electromagnetic Fields", "credit": 4 },
+      "EE3302": { "name": "Digital Logic Circuits", "credit": 3 },
+      "EC3301": { "name": "Electron Devices and Circuits", "credit": 3 },
+      "EE3303": { "name": "Electrical Machines - I", "credit": 3 },
+      "CS3353": {
+        "name": "C Programming and Data Structures",
+        "credit": 3
+      },
+      "EC3311": {
+        "name": "Electronic Devices and Circuits Laboratory",
+        "credit": 1.5
+      },
+      "EE3311": {
+        "name": "Electrical Machines Laboratory - I",
+        "credit": 1.5
+      },
+      "CS3362": {
+        "name": "C Programming and Data Structures Laboratory",
+        "credit": 1.5
+      },
+      "GE3361": { "name": "Professional Development", "credit": 1 }
+    },
+    "4": {
+      "GE3451": {
+        "name": "Environmental Sciences and Sustainability",
+        "credit": 2
+      },
+      "EE3401": { "name": "Transmission and Distribution", "credit": 3 },
+      "EE3402": {
+        "name": "Linear Integrated Circuits",
+        "credit": 3
+      },
+      "EE3403": {
+        "name": "Measurements and Instrumentation",
+        "credit": 3
+      },
+      "EE3404": {
+        "name": "Microprocessor and Microcontroller",
+        "credit": 3
+      },
+      "EE3405": { "name": "Electrical Machines - II", "credit": 3 },
+      "NCC2": { "name": "NCC Credit Course Level 2", "credit": 3 },
+      "EE3411": {
+        "name": "Electrical Machines Laboratory - II",
+        "credit": 1.5
+      },
+      "EE3412": {
+        "name": "Linear and Digital Circuits Laboratory",
+        "credit": 1.5
+      },
+      "EE3413": {
+        "name": "Microprocessor and Microcontroller Laboratory",
+        "credit": 1.5
+      }
+    },
+    "5": {
+      "EE3501": { "name": "Power System Analysis", "credit": 3 },
+      "EE3591": { "name": "Power Electronics", "credit": 3 },
+      "EE3503": { "name": "Control Systems", "credit": 3 },
+      "PE1": { "name": "Professional Elective I", "credit": 3 },
+      "PE2": { "name": "Professional Elective II", "credit": 3 },
+      "PE3": { "name": "Professional Elective III", "credit": 3 },
+      "MC1": { "name": "Mandatory Course I (Non-credit)", "credit": 1 },
+      "EE3511": {
+        "name": "Power Electronics Laboratory",
+        "credit": 1.5
+      },
+      "EE3512": {
+        "name": "Control and Instrumentation Laboratory",
+        "credit": 2
+      }
+    },
+    "6": {
+      "EE3601": { "name": "Protection and Switchgear", "credit": 3 },
+      "EE3602": {
+        "name": "Power System Operation and Control",
+        "credit": 3
+      },
+      "OE1": { "name": "Open Elective I", "credit": 3 },
+      "PE4": { "name": "Professional Elective IV", "credit": 3 },
+      "PE5": { "name": "Professional Elective V", "credit": 3 },
+      "PE6": { "name": "Professional Elective VI", "credit": 3 },
+      "MC2": { "name": "Mandatory Course II (Non-credit)", "credit": 1 },
+      "NCC3": { "name": "NCC Credit Course Level 3", "credit": 3 },
+      "EE3611": { "name": "Power System Laboratory", "credit": 1.5 }
+    },
+    "7": {
+      "EE3701": { "name": "High Voltage Engineering", "credit": 3 },
+      "GE3791": { "name": "Human Values and Ethics", "credit": 2 },
+      "ELM": { "name": "Elective - Management", "credit": 3 },
+      "OE2": { "name": "Open Elective II", "credit": 3 },
+      "OE3": { "name": "Open Elective III", "credit": 3 },
+      "OE4": { "name": "Open Elective IV", "credit": 3 },
+      "PE7": { "name": "Professional Elective VII", "credit": 3 }
+    },
+    "8": {
+      "EE3811": { "name": "Project Work / Internship", "credit": 10 }
+    }
+  },
+  "ECE": {
+    "1": {
+      "HS3152": { "name": "Professional English - I", "credit": 3 },
+      "MA3151": { "name": "Matrices and Calculus", "credit": 4 },
+      "PH3151": { "name": "Engineering Physics", "credit": 3 },
+      "CY3151": { "name": "Engineering Chemistry", "credit": 3 },
+      "GE3151": {
+        "name": "Problem Solving and Python Programming",
+        "credit": 3
+      },
+      "GE3152": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "GE3171": {
+        "name": "Problem Solving and Python Programming Laboratory",
+        "credit": 2
+      },
+      "BS3171": { "name": "Physics and Chemistry Laboratory", "credit": 2 },
+      "GE3172": { "name": "English Laboratory", "credit": 1 }
+    },
+
+    "2": {
+      "HS3252": { "name": "Professional English - II", "credit": 2 },
+      "MA3251": { "name": "Statistics and Numerical Methods", "credit": 4 },
+      "PH3254": {
+        "name": "Physics for Electronics Engineering",
+        "credit": 3
+      },
+      "BE3254": {
+        "name": "Electrical and Instrumentation Engineering",
+        "credit": 3
+      },
+      "GE3251": { "name": "Engineering Graphics", "credit": 4 },
+      "EC3251": { "name": "Circuit Analysis", "credit": 4 },
+      "GE3252": {
+        "name": "Tamils and Technology / தமிழரும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "NCC1": { "name": "NCC Credit Course Level 1", "credit": 2 },
+      "GE3271": { "name": "Engineering Practices Laboratory", "credit": 2 },
+      "EC3271": { "name": "Circuit Analysis Laboratory", "credit": 1 },
+      "GE3272": {
+        "name": "Communication Laboratory / Foreign Language",
+        "credit": 2
+      }
+    },
+
+    "3": {
+      "MA3355": {
+        "name": "Random Processes and Linear Algebra",
+        "credit": 4
+      },
+      "CS3353": {
+        "name": "C Programming and Data Structures",
+        "credit": 3
+      },
+      "EC3354": { "name": "Signals and Systems", "credit": 4 },
+      "EC3353": {
+        "name": "Electronic Devices and Circuits",
+        "credit": 3
+      },
+      "EC3351": { "name": "Control Systems", "credit": 3 },
+      "EC3352": { "name": "Digital Systems Design", "credit": 4 },
+      "EC3361": {
+        "name": "Electronic Devices and Circuits Laboratory",
+        "credit": 1.5
+      },
+      "CS3362": {
+        "name": "C Programming and Data Structures Laboratory",
+        "credit": 1.5
+      },
+      "GE3361": { "name": "Professional Development", "credit": 1 }
+    },
+
+    "4": {
+      "EC3452": { "name": "Electromagnetic Fields", "credit": 3 },
+      "EC3401": { "name": "Networks and Security", "credit": 4 },
+      "EC3451": {
+        "name": "Linear Integrated Circuits",
+        "credit": 3
+      },
+      "EC3492": {
+        "name": "Digital Signal Processing",
+        "credit": 4
+      },
+      "EC3491": { "name": "Communication Systems", "credit": 3 },
+      "GE3451": {
+        "name": "Environmental Sciences and Sustainability",
+        "credit": 2
+      },
+      "NCC2": { "name": "NCC Credit Course Level 2", "credit": 3 },
+      "EC3461": {
+        "name": "Communication Systems Laboratory",
+        "credit": 1.5
+      },
+      "EC3462": {
+        "name": "Linear Integrated Circuits Laboratory",
+        "credit": 1.5
+      }
+    },
+
+    "5": {
+      "EC3501": { "name": "Wireless Communication", "credit": 4 },
+      "EC3552": { "name": "VLSI and Chip Design", "credit": 3 },
+      "EC3551": {
+        "name": "Transmission Lines and RF Systems",
+        "credit": 3
+      },
+      "PE1": { "name": "Professional Elective I", "credit": 3 },
+      "PE2": { "name": "Professional Elective II", "credit": 3 },
+      "PE3": { "name": "Professional Elective III", "credit": 3 },
+      "MC1": { "name": "Mandatory Course I (Non-credit)", "credit": 1 },
+      "EC3561": { "name": "VLSI Laboratory", "credit": 2 }
+    },
+
+    "6": {
+      "ET3491": {
+        "name": "Embedded Systems and IoT Design",
+        "credit": 4
+      },
+      "CS3491": {
+        "name": "Artificial Intelligence and Machine Learning",
+        "credit": 4
+      },
+      "OE1": { "name": "Open Elective I", "credit": 3 },
+      "PE4": { "name": "Professional Elective IV", "credit": 3 },
+      "PE5": { "name": "Professional Elective V", "credit": 3 },
+      "PE6": { "name": "Professional Elective VI", "credit": 3 },
+      "MC2": { "name": "Mandatory Course II (Non-credit)", "credit": 1 },
+      "NCC3": { "name": "NCC Credit Course Level 3", "credit": 3 }
+    },
+
+    "7": {
+      "GE3791": { "name": "Human Values and Ethics", "credit": 2 },
+      "ELM": { "name": "Elective - Management", "credit": 3 },
+      "OE2": { "name": "Open Elective II", "credit": 3 },
+      "OE3": { "name": "Open Elective III", "credit": 3 },
+      "OE4": { "name": "Open Elective IV", "credit": 3 },
+      "EC3711": { "name": "Summer Internship", "credit": 2 }
+    },
+
+    "8": {
+      "EC3811": { "name": "Project Work / Internship", "credit": 10 }
+    }
+  },
+  "CIVIL": {
+    "1": {
+      "HS3152": { "name": "Professional English - I", "credit": 3 },
+      "MA3151": { "name": "Matrices and Calculus", "credit": 4 },
+      "PH3151": { "name": "Engineering Physics", "credit": 3 },
+      "CY3151": { "name": "Engineering Chemistry", "credit": 3 },
+      "GE3151": {
+        "name": "Problem Solving and Python Programming",
+        "credit": 3
+      },
+      "GE3152": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "GE3171": {
+        "name": "Problem Solving and Python Programming Laboratory",
+        "credit": 2
+      },
+      "BS3171": {
+        "name": "Physics and Chemistry Laboratory",
+        "credit": 2
+      },
+      "GE3172": { "name": "English Laboratory", "credit": 1 }
+    },
+
+    "2": {
+      "HS3252": { "name": "Professional English - II", "credit": 2 },
+      "MA3251": { "name": "Statistics and Numerical Methods", "credit": 4 },
+      "PH3201": { "name": "Physics for Civil Engineering", "credit": 3 },
+      "BE3252": {
+        "name": "Basic Electrical, Electronics and Instrumentation Engineering",
+        "credit": 3
+      },
+      "GE3251": { "name": "Engineering Graphics", "credit": 4 },
+      "NCC1": { "name": "NCC Credit Course Level 1", "credit": 2 },
+      "GE3252": {
+        "name": "Tamils and Technology / தமிழரும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "GE3271": { "name": "Engineering Practices Laboratory", "credit": 2 },
+      "BE3272": {
+        "name": "Basic Electrical, Electronics and Instrumentation Engineering Laboratory",
+        "credit": 2
+      },
+      "GE3272": {
+        "name": "Communication Laboratory / Foreign Language",
+        "credit": 2
+      }
+    },
+
+    "3": {
+      "MA3351": {
+        "name": "Transforms and Partial Differential Equations",
+        "credit": 4
+      },
+      "ME3351": { "name": "Engineering Mechanics", "credit": 3 },
+      "CE3301": { "name": "Fluid Mechanics", "credit": 3 },
+      "CE3302": {
+        "name": "Construction Materials and Technology",
+        "credit": 3
+      },
+      "CE3303": {
+        "name": "Water Supply and Wastewater Engineering",
+        "credit": 4
+      },
+      "CE3351": { "name": "Surveying and Levelling", "credit": 3 },
+      "CE3361": {
+        "name": "Surveying and Levelling Laboratory",
+        "credit": 1.5
+      },
+      "CE3311": {
+        "name": "Water and Wastewater Analysis Laboratory",
+        "credit": 1.5
+      },
+      "GE3361": { "name": "Professional Development", "credit": 1 }
+    },
+
+    "4": {
+      "CE3401": {
+        "name": "Applied Hydraulics Engineering",
+        "credit": 4
+      },
+      "CE3402": { "name": "Strength of Materials", "credit": 3 },
+      "CE3403": { "name": "Concrete Technology", "credit": 3 },
+      "CE3404": { "name": "Soil Mechanics", "credit": 3 },
+      "CE3405": {
+        "name": "Highway and Railway Engineering",
+        "credit": 3
+      },
+      "GE3451": {
+        "name": "Environmental Sciences and Sustainability",
+        "credit": 2
+      },
+      "NCC2": { "name": "NCC Credit Course Level 2", "credit": 3 },
+      "CE3411": {
+        "name": "Hydraulic Engineering Laboratory",
+        "credit": 1.5
+      },
+      "CE3412": {
+        "name": "Materials Testing Laboratory",
+        "credit": 2
+      },
+      "CE3413": {
+        "name": "Soil Mechanics Laboratory",
+        "credit": 1.5
+      }
+    },
+
+    "5": {
+      "CE3501": {
+        "name": "Design of Reinforced Concrete Structural Elements",
+        "credit": 3
+      },
+      "CE3502": { "name": "Structural Analysis I", "credit": 3 },
+      "CE3503": { "name": "Foundation Engineering", "credit": 3 },
+      "PE1": { "name": "Professional Elective I", "credit": 3 },
+      "PE2": { "name": "Professional Elective II", "credit": 3 },
+      "PE3": { "name": "Professional Elective III", "credit": 3 },
+      "MC1": { "name": "Mandatory Course I (Non-credit)", "credit": 1 },
+      "CE3511": {
+        "name": "Highway Engineering Laboratory",
+        "credit": 2
+      },
+      "CE3512": {
+        "name": "Survey Camp (2 weeks)",
+        "credit": 1
+      }
+    },
+
+    "6": {
+      "CE3601": {
+        "name": "Design of Steel Structural Elements",
+        "credit": 3
+      },
+      "CE3602": { "name": "Structural Analysis II", "credit": 3 },
+      "AG3601": { "name": "Engineering Geology", "credit": 3 },
+      "PE4": { "name": "Professional Elective IV", "credit": 3 },
+      "PE5": { "name": "Professional Elective V", "credit": 3 },
+      "PE6": { "name": "Professional Elective VI", "credit": 3 },
+      "OE1": { "name": "Open Elective I", "credit": 3 },
+      "MC2": { "name": "Mandatory Course II (Non-credit)", "credit": 1 },
+      "NCC3": { "name": "NCC Credit Course Level 3", "credit": 3 },
+      "CE3611": {
+        "name": "Building Drawing and Detailing Laboratory",
+        "credit": 2
+      }
+    },
+
+    "7": {
+      "CE3701": {
+        "name": "Estimation, Costing and Valuation Engineering",
+        "credit": 3
+      },
+      "AI3404": {
+        "name": "Hydrology and Water Resources Engineering",
+        "credit": 3
+      },
+      "GE3791": { "name": "Human Values and Ethics", "credit": 2 },
+      "GE3752": { "name": "Total Quality Management", "credit": 3 },
+      "OE2": { "name": "Open Elective II", "credit": 3 },
+      "OE3": { "name": "Open Elective III", "credit": 3 },
+      "OE4": { "name": "Open Elective IV", "credit": 3 }
+    },
+
+    "8": {
+      "CE3811": {
+        "name": "Project Work / Internship",
+        "credit": 10
+      }
+    }
+  },
+  "MECH": {
+    "1": {
+      "IP3151": { "name": "Induction Programme", "credit": 0 },
+      "HS3152": { "name": "Professional English - I", "credit": 3 },
+      "MA3151": { "name": "Matrices and Calculus", "credit": 4 },
+      "PH3151": { "name": "Engineering Physics", "credit": 3 },
+      "CY3151": { "name": "Engineering Chemistry", "credit": 3 },
+      "GE3151": {
+        "name": "Problem Solving and Python Programming",
+        "credit": 3
+      },
+      "GE3152": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "GE3171": {
+        "name": "Problem Solving and Python Programming Laboratory",
+        "credit": 2
+      },
+      "BS3171": { "name": "Physics and Chemistry Laboratory", "credit": 2 },
+      "GE3172": { "name": "English Laboratory", "credit": 1 }
+    },
+
+    "2": {
+      "HS3252": { "name": "Professional English - II", "credit": 2 },
+      "MA3251": { "name": "Statistics and Numerical Methods", "credit": 4 },
+      "PH3251": { "name": "Materials Science", "credit": 3 },
+      "BE3251": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "GE3251": { "name": "Engineering Graphics", "credit": 4 },
+      "GE3252": {
+        "name": "Tamils and Technology / தமிழரும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "GE3271": { "name": "Engineering Practices Laboratory", "credit": 2 },
+      "BE3271": {
+        "name": "Basic Electrical and Electronics Engineering Laboratory",
+        "credit": 2
+      },
+      "GE3272": {
+        "name": "Communication Laboratory / Foreign Language",
+        "credit": 2
+      }
+    },
+
+    "3": {
+      "MA3351": {
+        "name": "Transforms and Partial Differential Equations",
+        "credit": 4
+      },
+      "ME3351": { "name": "Engineering Mechanics", "credit": 3 },
+      "ME3391": { "name": "Engineering Thermodynamics", "credit": 3 },
+      "CE3391": {
+        "name": "Fluid Mechanics and Machinery",
+        "credit": 4
+      },
+      "ME3392": {
+        "name": "Engineering Materials and Metallurgy",
+        "credit": 3
+      },
+      "ME3393": { "name": "Manufacturing Processes", "credit": 3 },
+      "ME3381": {
+        "name": "Computer Aided Machine Drawing",
+        "credit": 2
+      },
+      "ME3382": {
+        "name": "Manufacturing Technology Laboratory",
+        "credit": 2
+      },
+      "GE3361": { "name": "Professional Development", "credit": 1 }
+    },
+
+    "4": {
+      "ME3491": { "name": "Theory of Machines", "credit": 3 },
+      "ME3451": { "name": "Thermal Engineering", "credit": 4 },
+      "ME3492": { "name": "Hydraulics and Pneumatics", "credit": 3 },
+      "ME3493": { "name": "Manufacturing Technology", "credit": 3 },
+      "CE3491": { "name": "Strength of Materials", "credit": 3 },
+      "GE3451": {
+        "name": "Environmental Sciences and Sustainability",
+        "credit": 2
+      },
+      "CE3481": {
+        "name": "Strength of Materials and Fluid Machinery Laboratory",
+        "credit": 2
+      },
+      "ME3461": {
+        "name": "Thermal Engineering Laboratory",
+        "credit": 2
+      }
+    },
+
+    "5": {
+      "ME3591": { "name": "Design of Machine Elements", "credit": 4 },
+      "ME3592": { "name": "Metrology and Measurements", "credit": 3 },
+      "PE1": { "name": "Professional Elective I", "credit": 3 },
+      "PE2": { "name": "Professional Elective II", "credit": 3 },
+      "PE3": { "name": "Professional Elective III", "credit": 3 },
+      "MC1": { "name": "Mandatory Course I (Non-credit)", "credit": 1 },
+      "ME3511": { "name": "Summer Internship", "credit": 1 },
+      "ME3581": {
+        "name": "Metrology and Dynamics Laboratory",
+        "credit": 2
+      }
+    },
+
+    "6": {
+      "ME3691": { "name": "Heat and Mass Transfer", "credit": 4 },
+      "PE4": { "name": "Professional Elective IV", "credit": 3 },
+      "PE5": { "name": "Professional Elective V", "credit": 3 },
+      "PE6": { "name": "Professional Elective VI", "credit": 3 },
+      "PE7": { "name": "Professional Elective VII", "credit": 3 },
+      "OE1": { "name": "Open Elective I", "credit": 3 },
+      "MC2": { "name": "Mandatory Course II (Non-credit)", "credit": 1 },
+      "ME3681": { "name": "CAD / CAM Laboratory", "credit": 2 },
+      "ME3682": { "name": "Heat Transfer Laboratory", "credit": 2 }
+    },
+
+    "7": {
+      "ME3791": { "name": "Mechatronics and IoT", "credit": 3 },
+      "ME3792": {
+        "name": "Computer Integrated Manufacturing",
+        "credit": 3
+      },
+      "GE3791": { "name": "Human Values and Ethics", "credit": 2 },
+      "GE3792": { "name": "Industrial Management", "credit": 3 },
+      "OE2": { "name": "Open Elective II", "credit": 3 },
+      "OE3": { "name": "Open Elective III", "credit": 3 },
+      "OE4": { "name": "Open Elective IV", "credit": 3 },
+      "ME3781": {
+        "name": "Mechatronics and IoT Laboratory",
+        "credit": 2
+      },
+      "ME3711": { "name": "Summer Internship", "credit": 1 }
+    },
+
+    "8": {
+      "ME3811": { "name": "Project Work / Internship", "credit": 10 }
+    }
+  }
+}

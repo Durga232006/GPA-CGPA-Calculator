@@ -1,0 +1,898 @@
+{
+  "IT": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "PH25C01": { "name": "Applied Physics – I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry – I", "credit": 3 },
+      "CS25C01": { "name": "Computer Programming: C", "credit": 3 },
+      "CS25C03": { "name": "Essentials of Computing", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C02": { "name": "Linear Algebra", "credit": 4 },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "EE25C01": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "PH25C03": {
+        "name": "Applied Physics (CSIE) – II",
+        "credit": 3
+      },
+      "IT25201": {
+        "name": "Foundations of Data Science using Python",
+        "credit": 4
+      },
+      "IT25202": {
+        "name": "Digital Principles and System Design",
+        "credit": 4
+      },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "ME25C05": {
+        "name": "Re-Engineering for Innovation",
+        "credit": 2
+      },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "DM2501": { "name": "Discrete Mathematics", "credit": 4 },
+      "CO2501": {
+        "name": "Computer Organization and Architecture",
+        "credit": 3
+      },
+      "DS2501": { "name": "Data Structures", "credit": 5 },
+      "OOP2501": {
+        "name": "Object Oriented Programming",
+        "credit": 5
+      },
+      "WT2501": { "name": "Web Technologies", "credit": 4 },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      }
+    },
+
+    "4": {
+      "PS2501": { "name": "Probability and Statistics", "credit": 3 },
+      "SD2502": {
+        "name": "Standards in Information Technology",
+        "credit": 1
+      },
+      "DBMS2501": {
+        "name": "Database Management Systems",
+        "credit": 5
+      },
+      "JAVA2501": { "name": "Java Programming", "credit": 5 },
+      "OS2501": { "name": "Operating Systems", "credit": 4 },
+      "SD2503": { "name": "Skill Development Course – II", "credit": 2 },
+      "ENL2502": {
+        "name": "English Communication Skills Laboratory – III",
+        "credit": 1
+      }
+    },
+
+    "5": {
+      "PE1": { "name": "Programme Elective – I", "credit": 3 },
+      "PE2": { "name": "Programme Elective – II", "credit": 3 },
+      "ML2501": { "name": "Machine Learning", "credit": 4 },
+      "CN2501": { "name": "Computer Networks", "credit": 4 },
+      "SD2504": { "name": "Skill Development Course – III", "credit": 2 },
+      "IOC1": { "name": "Industry Oriented Course – I", "credit": 1 },
+      "TOC2501": { "name": "Theory of Computation", "credit": 4 },
+      "OOSE2501": {
+        "name": "Object Oriented Software Engineering",
+        "credit": 3
+      }
+    },
+
+    "6": {
+      "CV2501": { "name": "Computer Vision", "credit": 3 },
+      "PE3": { "name": "Programme Elective – III", "credit": 3 },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "IOT2501": {
+        "name": "IoT Architecture and Protocols",
+        "credit": 3
+      },
+      "UIUX2501": {
+        "name": "UI/UX Design and Human Centered Design",
+        "credit": 3
+      },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 1 },
+      "CD2501": { "name": "Compiler Design", "credit": 3 },
+      "FSD2501": {
+        "name": "Full Stack Development Laboratory",
+        "credit": 2
+      },
+      "SLC": { "name": "Self Learning Course", "credit": 1 }
+    },
+
+    "7": {
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "CCS2501": {
+        "name": "Climate Change and Sustainability",
+        "credit": 2
+      },
+      "PE4": { "name": "Programme Elective – IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective – V", "credit": 3 },
+      "EH2501": {
+        "name": "Ethical Hacking and Penetration Testing",
+        "credit": 3
+      },
+      "INT2501": { "name": "Summer Internship", "credit": 1 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  },
+  "CSE": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "PH25C01": { "name": "Applied Physics – I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry – I", "credit": 3 },
+      "CS25C01": { "name": "Computer Programming: C", "credit": 3 },
+      "CS25C03": { "name": "Essentials of Computing", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C02": { "name": "Linear Algebra", "credit": 4 },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "EE25C01": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "PH25C03": { "name": "Applied Physics (CSIE) – II", "credit": 3 },
+      "CS25C06": {
+        "name": "Digital Principles and Computer Organization",
+        "credit": 4
+      },
+      "CS25C07": { "name": "Object Oriented Programming", "credit": 5 },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "ME25C05": { "name": "Re-Engineering for Innovation", "credit": 2 },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "DM2501": { "name": "Discrete Mathematics", "credit": 4 },
+      "OS2501": { "name": "Operating Systems", "credit": 4 },
+      "OOSE2501": {
+        "name": "Object Oriented Software Engineering",
+        "credit": 3
+      },
+      "DS2501": { "name": "Data Structures", "credit": 5 },
+      "JAVA2501": { "name": "Java Programming", "credit": 5 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 }
+    },
+
+    "4": {
+      "PS2501": { "name": "Probability and Statistics", "credit": 3 },
+      "SD2502": { "name": "Standards in Computer Science", "credit": 1 },
+      "DBMS2501": { "name": "Database Management Systems", "credit": 5 },
+      "JAVA2501": { "name": "Java Programming", "credit": 5 },
+      "OS2501": { "name": "Operating Systems", "credit": 4 },
+      "SD2503": { "name": "Skill Development Course – II", "credit": 2 },
+      "ENL2502": {
+        "name": "English Communication Skills Laboratory – III",
+        "credit": 1
+      }
+    },
+
+    "5": {
+      "CN2501": { "name": "Computer Networks", "credit": 4 },
+      "CD2501": { "name": "Compiler Design", "credit": 3 },
+      "PE1": { "name": "Programme Elective – I", "credit": 3 },
+      "CS2504": { "name": "Cryptography and Cyber Security", "credit": 4 },
+      "ML2501": {
+        "name": "Artificial Intelligence and Machine Learning",
+        "credit": 4
+      },
+      "FSD2501": { "name": "Full Stack Development", "credit": 4 },
+      "SD2504": { "name": "Skill Development Course – III", "credit": 2 },
+      "IOC1": { "name": "Industry Oriented Course – I", "credit": 1 }
+    },
+
+    "6": {
+      "LLM2501": { "name": "Large Language Models", "credit": 3 },
+      "PE2": { "name": "Programme Elective – II", "credit": 3 },
+      "PE3": { "name": "Programme Elective – III", "credit": 3 },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 1 },
+      "DL2501": { "name": "Deep Learning", "credit": 4 },
+      "MAD2501": { "name": "Mobile App Development Laboratory", "credit": 2 },
+      "SLC": { "name": "Self Learning Course", "credit": 1 }
+    },
+
+    "7": {
+      "CCS2501": { "name": "Climate Change and Sustainability", "credit": 2 },
+      "PE4": { "name": "Programme Elective – IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective – V", "credit": 3 },
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "EH2501": {
+        "name": "Ethical Hacking and Penetration Testing",
+        "credit": 3
+      },
+      "INT2501": { "name": "Summer Internship", "credit": 1 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  },
+  "ECE": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "EE25C04": {
+        "name": "Basic Electronics and Electrical Engineering",
+        "credit": 3
+      },
+      "PH25C01": { "name": "Applied Physics - I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry - I", "credit": 3 },
+      "CS25C01": { "name": "Computer Programming: C", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C02": { "name": "Linear Algebra", "credit": 4 },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "EC25C01": { "name": "Electron Devices", "credit": 3 },
+      "EC25C02": { "name": "Circuits and Network Analysis", "credit": 3 },
+      "CS25C05": { "name": "Data Structures using C++", "credit": 4 },
+      "ME25C05": { "name": "Re-Engineering for Innovation", "credit": 2 },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "EC25C03": { "name": "Devices and Circuits Laboratory", "credit": 2 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "TA2501": { "name": "Transforms and its Applications", "credit": 4 },
+      "SS2501": { "name": "Signals and Systems", "credit": 4 },
+      "CAO2501": {
+        "name": "Computer Architecture and Organization",
+        "credit": 3
+      },
+      "ECA2501": { "name": "Electronic Circuits and Analysis", "credit": 3 },
+      "DSD2501": { "name": "Digital System Design", "credit": 4 },
+      "PSP2501": { "name": "Problem Solving using Python", "credit": 2 },
+      "ECL2501": { "name": "Electronic Circuits Laboratory", "credit": 2 },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      }
+    },
+
+    "4": {
+      "EMFT2501": {
+        "name": "Electro Magnetic Fields and Transmission Lines",
+        "credit": 4
+      },
+      "CCS2501": { "name": "Climate Change and Sustainability", "credit": 2 },
+      "LIC2501": { "name": "Linear Integrated Circuits", "credit": 3 },
+      "CS2501": { "name": "Control Systems", "credit": 3 },
+      "SD2502": { "name": "Skill Development Course – II", "credit": 2 },
+      "LICL2501": {
+        "name": "Linear Integrated Circuits Laboratory",
+        "credit": 2
+      },
+      "MIC2501": { "name": "Microprocessor and Microcontroller", "credit": 3 },
+      "IOC1": { "name": "Industry Oriented Course - I", "credit": 1 },
+      "MICL2501": {
+        "name": "Microprocessor and Microcontroller Laboratory",
+        "credit": 2
+      },
+      "ENL2502": { "name": "English Communication Skills – III", "credit": 1 }
+    },
+
+    "5": {
+      "STEC2501": {
+        "name": "Introduction to Standards in Electronics and Communication",
+        "credit": 1
+      },
+      "AC2501": { "name": "Analog Communication", "credit": 4 },
+      "DCN2501": { "name": "Data Communication Networks", "credit": 4 },
+      "DSP2501": { "name": "Digital Signal Processing", "credit": 4 },
+      "ESIOT2501": {
+        "name": "Embedded Systems and Industrial IOT",
+        "credit": 4
+      },
+      "PE1": { "name": "Programme Elective – I", "credit": 3 },
+      "AD2501": { "name": "Antenna Design", "credit": 4 },
+      "SD2503": { "name": "Skill Development Course – III", "credit": 2 },
+      "ACL2501": { "name": "Analog Communication Laboratory", "credit": 2 },
+      "DSPL2501": {
+        "name": "Digital Signal Processing Laboratory",
+        "credit": 2
+      }
+    },
+
+    "6": {
+      "PE2": { "name": "Programme Elective – II", "credit": 3 },
+      "PE3": { "name": "Programme Elective – III", "credit": 3 },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "DC2501": { "name": "Digital Communication", "credit": 4 },
+      "AI2501": {
+        "name": "Artificial Intelligence & Machine Learning",
+        "credit": 3
+      },
+      "CMOS2501": { "name": "CMOS VLSI Design", "credit": 4 },
+      "DCL2501": { "name": "Digital Communication Laboratory", "credit": 2 },
+      "CMOSL2501": { "name": "CMOS VLSI Design Laboratory", "credit": 2 },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 2 },
+      "SLC": { "name": "Self-Learning Course", "credit": 1 }
+    },
+
+    "7": {
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "RFMW2501": { "name": "RF and Microwave Engineering", "credit": 3 },
+      "WC2501": { "name": "Wireless Communication", "credit": 3 },
+      "PE4": { "name": "Programme Elective – IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective – V", "credit": 3 },
+      "PM2501": { "name": "Project Management", "credit": 2 },
+      "WCL2501": { "name": "Wireless Communication Lab", "credit": 2 },
+      "MWOC2501": {
+        "name": "Millimeter wave and Optical Communication",
+        "credit": 4
+      },
+      "MOL2501": { "name": "Microwave and Optical Lab", "credit": 2 },
+      "INT2501": { "name": "Summer Internship", "credit": 1 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  },
+  "EEE": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "EE25C03": {
+        "name": "Fundamentals of Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "PH25C01": { "name": "Applied Physics – I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry – I", "credit": 3 },
+      "CS25C01": { "name": "Computer Programming: C", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C03": { "name": "Transforms and its Applications", "credit": 4 },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "GE25C01": {
+        "name": "Basic Civil and Mechanical Engineering",
+        "credit": 3
+      },
+      "PH25C04": { "name": "Applied Physics (EE) – II", "credit": 3 },
+      "ME25C01": { "name": "Engineering Drawing", "credit": 3 },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "CS25C04": { "name": "Data Structures and Algorithms", "credit": 4 },
+      "ME25C05": { "name": "Re-Engineering for Innovation", "credit": 2 },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "MFE2501": { "name": "Matrices for Engineers", "credit": 2 },
+      "EMT2501": { "name": "Electromagnetic Theory", "credit": 4 },
+      "DE2501": { "name": "Digital Electronics", "credit": 3 },
+      "ECA2501": { "name": "Electric Circuit Analysis", "credit": 4 },
+      "EDC2501": { "name": "Electronic Devices & Circuits", "credit": 4 },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      }
+    },
+
+    "4": {
+      "PS2501": { "name": "Probability and Statistics", "credit": 3 },
+      "PGTD2501": {
+        "name": "Power Generation, Transmission & Distribution",
+        "credit": 3
+      },
+      "CS2501": { "name": "Control Systems", "credit": 3 },
+      "ADS2501": { "name": "Applied Data Science", "credit": 3 },
+      "DCMT2501": { "name": "DC Machines and Transformers", "credit": 3 },
+      "LIC2501": { "name": "Linear Integrated Circuits", "credit": 3 },
+      "SD2502": { "name": "Skill Development Course – II", "credit": 2 },
+      "ENL2502": {
+        "name": "English Communication Skills Laboratory – III",
+        "credit": 1
+      },
+      "DCMTL2501": {
+        "name": "DC Machines and Transformers Laboratory",
+        "credit": 2
+      },
+      "EL2501": { "name": "Electronics Laboratory", "credit": 2 }
+    },
+
+    "5": {
+      "PE1": { "name": "Programme Elective – I", "credit": 3 },
+      "PE2": { "name": "Programme Elective – II", "credit": 3 },
+      "ACM2501": { "name": "AC Machines", "credit": 3 },
+      "PSA2501": { "name": "Power System Analysis", "credit": 3 },
+      "MI2501": { "name": "Measurements and Instrumentation", "credit": 3 },
+      "SD2503": { "name": "Skill Development Course – III", "credit": 2 },
+      "IOC1": { "name": "Industry Oriented Course – I", "credit": 1 },
+      "ACML2501": { "name": "AC Machines Laboratory", "credit": 2 },
+      "CIL2501": {
+        "name": "Control and Instrumentation Laboratory",
+        "credit": 2
+      }
+    },
+
+    "6": {
+      "EMD2501": { "name": "Electrical Machine Design", "credit": 4 },
+      "MPMC2501": { "name": "Microprocessors & Microcontrollers", "credit": 4 },
+      "PSPSG2501": {
+        "name": "Power System Protection and Switch Gear",
+        "credit": 3
+      },
+      "PE3": { "name": "Programme Elective – III", "credit": 3 },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "ISEE2501": {
+        "name": "Introduction to Standards in Electrical Engineering",
+        "credit": 1
+      },
+      "PE2501": { "name": "Power Electronics", "credit": 4 },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 1 },
+      "SLC": { "name": "Self-Learning Course", "credit": 1 }
+    },
+
+    "7": {
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "CCS2501": { "name": "Climate Change and Sustainability", "credit": 2 },
+      "HVE2501": { "name": "High Voltage Engineering", "credit": 3 },
+      "PE4": { "name": "Programme Elective – IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective – V", "credit": 3 },
+      "PM2501": { "name": "Project Management", "credit": 2 },
+      "PSL2501": { "name": "Power System Laboratory", "credit": 2 },
+      "INT2501": { "name": "Summer Internship", "credit": 1 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  },
+  "AI & DS": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "PH25C01": { "name": "Applied Physics – I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry – I", "credit": 3 },
+      "CS25C01": { "name": "Computer Programming: C", "credit": 3 },
+      "CS25C03": { "name": "Essentials of Computing", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C02": { "name": "Linear Algebra", "credit": 4 },
+      "EE25C01": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "CS25C06": {
+        "name": "Digital Principles and Computer Organization",
+        "credit": 4
+      },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "PH25C03": { "name": "Applied Physics (CSIE) – II", "credit": 3 },
+      "AD25201": { "name": "Python for Data Science", "credit": 4 },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "ME25C05": { "name": "Re-Engineering for Innovation", "credit": 2 },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "DM2501": { "name": "Discrete Mathematics", "credit": 4 },
+      "DS2501": { "name": "Data Structures", "credit": 5 },
+      "JAVA2501": { "name": "Java Programming", "credit": 5 },
+      "EDA2501": { "name": "Exploratory Data Analysis", "credit": 4 },
+      "OS2501": { "name": "Operating Systems", "credit": 4 },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      }
+    },
+
+    "4": {
+      "PS2501": { "name": "Probability and Statistics", "credit": 3 },
+      "AL2501": { "name": "Algorithms", "credit": 3 },
+      "AI2501": { "name": "Artificial Intelligence Essentials", "credit": 3 },
+      "DPS2501": { "name": "Data Privacy and Security", "credit": 3 },
+      "SAI2501": {
+        "name": "Standards in Artificial Intelligence",
+        "credit": 3
+      },
+      "DBMS2501": { "name": "Database Management Systems", "credit": 3 },
+      "SD2502": { "name": "Skill Development Course – II", "credit": 3 },
+      "ENL2502": {
+        "name": "English Communication Skills Laboratory – III",
+        "credit": 1
+      }
+    },
+
+    "5": {
+      "OPT2501": { "name": "Optimisation Techniques", "credit": 2 },
+      "NLP2501": { "name": "Natural Language Processing", "credit": 3 },
+      "PE1": { "name": "Programme Elective – I", "credit": 3 },
+      "PE2": { "name": "Programme Elective – II", "credit": 3 },
+      "ML2501": { "name": "Machine Learning", "credit": 4 },
+      "CN2501": { "name": "Computer Networks", "credit": 4 },
+      "IOT2501": { "name": "Internet of Things", "credit": 3 },
+      "SD2503": { "name": "Skill Development Course – III", "credit": 2 },
+      "IOC1": { "name": "Industry Oriented Course – I", "credit": 1 }
+    },
+
+    "6": {
+      "CD2501": { "name": "Compiler Design", "credit": 3 },
+      "PE3": { "name": "Programme Elective – III", "credit": 3 },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "DL2501": { "name": "Deep Learning", "credit": 4 },
+      "IP2501": { "name": "Image Processing", "credit": 3 },
+      "UIUX2501": {
+        "name": "UI/UX Design and Human Centered Design",
+        "credit": 3
+      },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 1 },
+      "FSD2501": { "name": "Full Stack Development Laboratory", "credit": 2 },
+      "SLC": { "name": "Self-Learning Course", "credit": 1 }
+    },
+
+    "7": {
+      "PE4": { "name": "Programme Elective – IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective – V", "credit": 3 },
+      "CCS2501": { "name": "Climate Change and Sustainability", "credit": 2 },
+      "EH2501": {
+        "name": "Ethical Hacking and Penetration Testing",
+        "credit": 3
+      },
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "INT2501": { "name": "Summer Internship", "credit": 1 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  },
+  "MECH": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "ME25C03": {
+        "name": "Introduction to Mechanical Engineering",
+        "credit": 3
+      },
+      "ME25C01": { "name": "Engineering Drawing", "credit": 4 },
+      "PH25C01": { "name": "Applied Physics – I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry – I", "credit": 3 },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "CS25C02": { "name": "Computer Programming: Python", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C02": { "name": "Linear Algebra", "credit": 4 },
+      "ME25C02": { "name": "Engineering Mechanics", "credit": 4 },
+      "EE25C01": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "PH25C05": { "name": "Applied Physics (ME) – II", "credit": 3 },
+      "CY25C03": { "name": "Applied Chemistry (ME) – II", "credit": 2 },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "ME25C05": { "name": "Re-Engineering for Innovation", "credit": 2 },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "CDE2501": {
+        "name": "Computational Differential Equations",
+        "credit": 4
+      },
+      "AEM2501": { "name": "Applied Engineering Mechanics", "credit": 3 },
+      "ET2501": { "name": "Engineering Thermodynamics", "credit": 4 },
+      "SOM2501": { "name": "Strength of Materials", "credit": 4 },
+      "MP1": { "name": "Manufacturing Processes – I", "credit": 3 },
+      "ES2501": { "name": "Embedded Systems", "credit": 3 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 }
+    },
+
+    "4": {
+      "ADS2501": { "name": "Applied Data Science", "credit": 3 },
+      "KDM2501": { "name": "Kinematics and Dynamics of Machines", "credit": 3 },
+      "FM2501": { "name": "Fluid Mechanics & Machinery", "credit": 4 },
+      "MP2": { "name": "Manufacturing Processes – II", "credit": 4 },
+      "TEI2501": { "name": "Thermal Engineering – I", "credit": 3 },
+      "PGT2501": { "name": "Power Generation Technologies", "credit": 3 },
+      "SME2501": { "name": "Standards in Mechanical Engineering", "credit": 1 },
+      "ENL2502": {
+        "name": "English Communication Skills Laboratory – III",
+        "credit": 2
+      },
+      "SD2502": { "name": "Skill Development Course – II", "credit": 4 }
+    },
+
+    "5": {
+      "DME2501": { "name": "Design of Machine Elements", "credit": 3 },
+      "MMS2501": { "name": "Metallurgy and Materials Science", "credit": 3 },
+      "TEII2501": { "name": "Thermal Engineering – II", "credit": 4 },
+      "MI2501": { "name": "Measurements and Instrumentation", "credit": 3 },
+      "PE1": { "name": "Programme Elective – I", "credit": 3 },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "SD2503": { "name": "Skill Development Course – III", "credit": 2 },
+      "IOC1": { "name": "Industry Oriented Course – I", "credit": 1 }
+    },
+
+    "6": {
+      "DTS2501": { "name": "Design of Transmission Systems", "credit": 4 },
+      "HMT2501": { "name": "Heat and Mass Transfer", "credit": 4 },
+      "FEM2501": {
+        "name": "FEM Applications in Mechanical Engineering",
+        "credit": 4
+      },
+      "PE2": { "name": "Programme Elective – II", "credit": 3 },
+      "PE3": { "name": "Programme Elective – III", "credit": 3 },
+      "CAM2501": { "name": "Computer Aided Modelling Laboratory", "credit": 2 },
+      "SLC": { "name": "Self-Learning Course", "credit": 1 },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 1 }
+    },
+
+    "7": {
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "CCS2501": { "name": "Climate Change and Sustainability", "credit": 2 },
+      "IA2501": { "name": "Industrial Automation", "credit": 3 },
+      "PE4": { "name": "Programme Elective – IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective – V", "credit": 3 },
+      "PM2501": { "name": "Project Management", "credit": 2 },
+      "IT2501": { "name": "Industrial Training", "credit": 1 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  },
+  "CIVIL": {
+    "1": {
+      "MA25C01": { "name": "Applied Calculus", "credit": 4 },
+      "CE25C01": { "name": "Introduction to Civil Engineering", "credit": 3 },
+      "PH25C01": { "name": "Applied Physics – I", "credit": 3 },
+      "CY25C01": { "name": "Applied Chemistry – I", "credit": 3 },
+      "ME25C01": { "name": "Engineering Drawing", "credit": 4 },
+      "UC25H01": { "name": "Heritage of Tamils / தமிழர்மரபு", "credit": 1 },
+      "EN25C01": { "name": "English Essentials – I", "credit": 2 },
+      "CS25C02": { "name": "Computer Programming: Python", "credit": 3 },
+      "ME25C04": { "name": "Makerspace", "credit": 2 },
+      "UC25A01": { "name": "Life Skills for Engineers – I", "credit": 1 },
+      "UC25A02": { "name": "Physical Education – I", "credit": 1 }
+    },
+
+    "2": {
+      "MA25C02": { "name": "Linear Algebra", "credit": 4 },
+      "ME25C02": { "name": "Engineering Mechanics", "credit": 4 },
+      "PH25C02": { "name": "Applied Physics (CE) – II", "credit": 3 },
+      "EE25C01": {
+        "name": "Basic Electrical and Electronics Engineering",
+        "credit": 3
+      },
+      "CY25C02": { "name": "Applied Chemistry (CE) – II", "credit": 2 },
+      "UC25H02": {
+        "name": "Tamils and Technology / தமிழர்களும் தொழில்நுட்பமும்",
+        "credit": 1
+      },
+      "CE25201": {
+        "name": "Construction Materials and Technology",
+        "credit": 3
+      },
+      "EN25C02": { "name": "English Essentials – II", "credit": 2 },
+      "ME25C05": { "name": "Re-Engineering for Innovation", "credit": 2 },
+      "UC25A03": { "name": "Life Skills for Engineers – II", "credit": 1 },
+      "UC25A04": { "name": "Physical Education – II", "credit": 1 },
+      "FL1": { "name": "Foreign Language", "credit": 1 }
+    },
+
+    "3": {
+      "CDE2501": {
+        "name": "Computational Differential Equations",
+        "credit": 4
+      },
+      "FM2501": { "name": "Fluid Mechanics and Machinery", "credit": 4 },
+      "EG2501": { "name": "Engineering Geology", "credit": 3 },
+      "SOM1": { "name": "Strength of Materials I", "credit": 4 },
+      "SG2501": { "name": "Surveying and Geomatics", "credit": 3 },
+      "SD2501": { "name": "Skill Development Course – I", "credit": 2 },
+      "FML2501": {
+        "name": "Fluid Mechanics and Machinery Laboratory",
+        "credit": 2
+      },
+      "SGL2501": { "name": "Surveying and Geomatics Laboratory", "credit": 2 },
+      "ENL2501": {
+        "name": "English Communication Skills Laboratory – II",
+        "credit": 1
+      }
+    },
+
+    "4": {
+      "SOM2": { "name": "Strength of Materials II", "credit": 3 },
+      "SM2501": { "name": "Soil Mechanics", "credit": 3 },
+      "WSE2501": { "name": "Water Supply Engineering", "credit": 3 },
+      "STD2501": {
+        "name": "Introduction to Standards in Civil Engineering",
+        "credit": 1
+      },
+      "CT2501": { "name": "Concrete Technology", "credit": 4 },
+      "DRCCE2501": {
+        "name": "Design of Reinforced Cement Concrete Elements",
+        "credit": 3
+      },
+      "HE2501": { "name": "Highway Engineering", "credit": 4 },
+      "CAD2501": { "name": "Computer-aided Building Drawing", "credit": 2 },
+      "SD2502": { "name": "Skill Development Course II", "credit": 2 },
+      "ENL2502": {
+        "name": "English Communication Skills Laboratory – III",
+        "credit": 1
+      }
+    },
+
+    "5": {
+      "SA1": { "name": "Structural Analysis – I", "credit": 3 },
+      "FE2501": { "name": "Foundation Engineering", "credit": 3 },
+      "WWE2501": { "name": "Waste Water Engineering", "credit": 3 },
+      "DCS2501": { "name": "Design of Concrete Structures", "credit": 3 },
+      "PE1": { "name": "Programme Elective I", "credit": 3 },
+      "PE2": { "name": "Programme Elective II", "credit": 3 },
+      "WWEL2501": {
+        "name": "Water and Wastewater Engineering Laboratory",
+        "credit": 2
+      },
+      "SML2501": { "name": "Soil Mechanics Laboratory", "credit": 2 },
+      "SD2503": { "name": "Skill Development Course – III", "credit": 2 },
+      "IOC1": { "name": "Industry Oriented Course – I", "credit": 1 }
+    },
+
+    "6": {
+      "SA2": { "name": "Structural Analysis – II", "credit": 3 },
+      "DSSE": { "name": "Design of Steel Structural Elements", "credit": 3 },
+      "RAHE": {
+        "name": "Railways, Airports and Harbour Engineering",
+        "credit": 3
+      },
+      "PE3": {
+        "name": "Programme Elective – III (Emerging Technology)",
+        "credit": 3
+      },
+      "OE1": { "name": "Open Elective", "credit": 3 },
+      "PM2501": { "name": "Project Management", "credit": 2 },
+      "IOC2": { "name": "Industry Oriented Course – II", "credit": 1 },
+      "SI": { "name": "Summer Internship", "credit": 1 },
+      "BSDL2501": {
+        "name": "Building and Structural Drawing Laboratory",
+        "credit": 2
+      },
+      "SLC": { "name": "Self-Learning Course", "credit": 1 }
+    },
+
+    "7": {
+      "EED2501": {
+        "name": "Engineering Entrepreneurship Development",
+        "credit": 3
+      },
+      "CCS2501": { "name": "Climate Change and Sustainability", "credit": 2 },
+      "ECV2501": {
+        "name": "Estimation, Costing and Valuation Engineering",
+        "credit": 3
+      },
+      "PCS2501": { "name": "Prestressed Concrete Structures", "credit": 3 },
+      "PE4": { "name": "Programme Elective IV", "credit": 3 },
+      "PE5": { "name": "Programme Elective V", "credit": 3 },
+      "IE2501": { "name": "Irrigation Engineering and Drawings", "credit": 3 },
+      "MP2501": { "name": "Mini Project", "credit": 2 }
+    },
+
+    "8": {
+      "PW2501": {
+        "name": "Project Work / Internship cum Project Work",
+        "credit": 8
+      }
+    }
+  }
+}

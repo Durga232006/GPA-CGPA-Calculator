@@ -1,0 +1,303 @@
+/* ================= Global Styles ================= */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #111;
+  transition: 0.3s;
+  width: auto;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  width: 100%;
+  background: #1e88e5;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between; /* logo left, links+toggle right */
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.nav-logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* Links + Theme Toggle aligned together */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between links and toggle */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Theme Toggle inside navbar */
+.theme-toggle {
+  background: #1565c0;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #0d47a1;
+}
+
+/* ---------- Container ---------- */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+body.dark-mode .container {
+  background: #1e1e1e;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+}
+
+/* ---------- Headings ---------- */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  background: #1e88e5;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 5px 0 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* ---------- Subject Card (GPA) ---------- */
+.subject-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body.dark-mode .subject-card {
+  background: #333;
+}
+
+.subject-card input,
+.subject-card select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 0;
+}
+
+.subject-card input.subject-code {
+  flex: 2;
+}
+
+body.dark-mode .subject-card input,
+body.dark-mode .subject-card select {
+  background: #444;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+.subject-card button {
+  background: #ff7043;
+  flex: 0 0 100px;
+}
+
+.subject-card button:hover {
+  background: #f4511e;
+}
+
+/* ---------- Form Grid (CGPA) ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-grid label {
+  font-weight: 600;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+/* ---------- Result ---------- */
+#resultGPA,
+#resultCGPA {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e88e5;
+}
+
+body.dark-mode #resultGPA,
+body.dark-mode #resultCGPA {
+  color: #42a5f5;
+}
+
+/* ---------- Semester Row ---------- */
+.sem-row input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.sem-row label {
+  font-weight: 600;
+}
+
+.sem-row button.delete-sem {
+  flex: 0 0 auto;
+}
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 40px auto; /* Centered with a smaller top margin */
+    width: 95%; /* Occupy more width on mobile */
+  }
+
+  /* Force subject card to stay in a row like desktop */
+  .subject-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Prevents wrapping to next line */
+    gap: 8px;
+    padding: 10px;
+  }
+
+  /* Subject Code input gets more space */
+  .subject-card input.subject-code {
+    flex: 3;
+    min-width: 0; /* Important for flex items to shrink */
+  }
+
+  /* Grade dropdown */
+  .subject-card select {
+    flex: 1.5;
+    min-width: 0;
+  }
+
+  /* Delete button (X) */
+  .subject-card button {
+    flex: 0 0 45px; /* Fixed width for the X button */
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  /* Form Grid: Keep label and input on same line if desired, 
+     or stacked but aligned. Let's keep them stacked for better UX on small screens
+     but ensure they fill the width. */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  /* Keep the main action buttons side-by-side */
+  .container > button,
+  .container > div > button {
+    width: 47%;
+    font-size: 0.9rem;
+    padding: 12px 5px;
+    margin: 5px 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjusting the logo and toggle for very small screens */
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+  }
+
+  /* Subject Card refinement for tiny screens */
+  .subject-card {
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .subject-card input,
+  .subject-card select {
+    font-size: 0.85rem;
+    padding: 8px 5px;
+  }
+
+  .subject-card button {
+    flex: 0 0 35px;
+  }
+}

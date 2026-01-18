@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light-mode">
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">GPA/CGPA Calc</a>
+      <div class="nav-links">
+        <a href="gpa.html">GPA</a>
+        <div class="theme-toggle" id="themeToggle">🌙</div>
+      </div>
+    </nav>
+
+    <div class="container pdf-area">
+      <div class="container">
+        <h2>CGPA Calculator</h2>
+
+        <div class="form-grid">
+          <label>Choose Department:</label>
+          <select id="department">
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="AI & DS">AI & DS</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <label>Choose Regulation:</label>
+          <select id="regulation">
+            <option value="">Select Regulation</option>
+            <option value="2021">2021</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <label>Number of Semesters:</label>
+          <select id="numSemesters">
+            <option value="">Select Number of Semesters</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+
+        <div id="gpa-inputs-container"></div>
+
+        <div style="text-align: center">
+          <button id="calculateCGPA">Calculate CGPA</button>
+          <button id="downloadCGPA">Download PDF</button>
+        </div>
+
+        <p id="resultCGPA"></p>
+      </div>
+    </div>
+    <!-- html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
