@@ -27,313 +27,251 @@ if (themeToggle) {
     }
   });
 }
+
 /* ================= JSON DATA LOADING ================= */
 let subjectsData = {};
 
 const regulationSelect = document.getElementById("regulation");
 const departmentSelect = document.getElementById("department");
-const semesterSelect = document.getElementById("semester");
+const semesterSelect = document.getElementById("numSemesters");
 
-// Load JSON based on selected regulation
+// Load JSON
 async function loadSubjects() {
-  if (!regulationSelect?.value) return;
-
-  const path = `data/${regulationSelect.value}.json`;
-  console.log("Fetching JSON:", path);
+  if (!regulationSelect.value) return;
 
   try {
-    const res = await fetch(path);
-
-    if (!res.ok) {
-      throw new Error(`JSON file not found: ${path}`);
-    }
-
+    const res = await fetch(`data/${regulationSelect.value}.json`);
+    if (!res.ok) throw new Error("JSON missing");
     subjectsData = await res.json();
-    console.log("Loaded subjectsData:", subjectsData);
-
-    // Populate department dropdown dynamically if needed
-    if (departmentSelect) {
-      departmentSelect.innerHTML = `<option value="">Select Department</option>`;
-      Object.keys(subjectsData).forEach((dept) => {
-        departmentSelect.innerHTML += `<option value="${dept}">${dept}</option>`;
-      });
-    }
-
-    // If department already selected, populate semesters
-    if (departmentSelect?.value) populateSemesters();
-  } catch (e) {
-    console.error(e);
-    alert("Syllabus JSON not found for this regulation");
+    populateDepartments();
+  } catch {
+    alert("Syllabus JSON not found!");
     subjectsData = {};
-    semesterSelect.innerHTML = `<option value="">No data available</option>`;
   }
 }
 
-// Populate semesters based on selected department
-function populateSemesters() {
-  if (!semesterSelect || !departmentSelect?.value) return;
-
-  const dept = departmentSelect.value;
-  const sems = subjectsData?.[dept];
-
-  if (!sems) {
-    semesterSelect.innerHTML = `<option value="">No semesters found for ${dept}</option>`;
-    return;
-  }
-
-  semesterSelect.innerHTML = `<option value="">Select Semester</option>`;
-  Object.keys(sems).forEach((sem) => {
-    semesterSelect.innerHTML += `<option value="${sem}">Semester ${sem}</option>`;
+function populateDepartments() {
+  departmentSelect.innerHTML = `<option value="">Select Department</option>`;
+  Object.keys(subjectsData).forEach((dept) => {
+    departmentSelect.innerHTML += `<option value="${dept}">${dept}</option>`;
   });
 }
 
-// Get subject details for GPA calculation
 function getSubjectDetails(code) {
-  const dept = departmentSelect?.value;
-  if (!dept || !code) return null;
-
-  const subjectCode = code.trim().toUpperCase();
-  const deptData = subjectsData[dept];
-
-  if (!deptData) return null;
-
-  // 🔍 SEARCH IN ALL SEMESTERS
-  for (const sem in deptData) {
-    if (deptData[sem][subjectCode]) {
-      return deptData[sem][subjectCode];
-    }
-  }
-
-  return null;
+  const dept = departmentSelect.value;
+  const sem = semesterSelect.value;
+  if (!dept || !sem || !code) return null;
+  return subjectsData?.[dept]?.[sem]?.[code] || null;
 }
 
-// Event listeners
 regulationSelect?.addEventListener("change", loadSubjects);
-departmentSelect?.addEventListener("change", populateSemesters);
 
-/* ================= GPA PAGE (with Number of Subjects) ================= */
+/* ================= GPA CALCULATION ================= */
 const subjectsContainer = document.getElementById("subjects-container");
-const numSubjectsInput = document.getElementById("numSubjects"); // new input
+const numSubjectsInput = document.getElementById("numSubjects");
 const calculateGpaBtn = document.getElementById("calculateGPA");
 const downloadGpaBtn = document.getElementById("downloadGPA");
 
-if (subjectsContainer) {
-  // Create a subject card
-  function createSubjectCard() {
-    const div = document.createElement("div");
-    div.className = "subject-card";
-    div.style.display = "flex";
-    div.style.alignItems = "center";
-    div.style.gap = "10px";
-    div.style.marginBottom = "10px";
+function createSubjectCard() {
+  const div = document.createElement("div");
+  div.className = "subject-card";
 
-    div.innerHTML = `
-  <input type="text" class="subject-code" placeholder="Subject Code" style="width=20px;">
-  <select style="width=10px;">
-    <option value="10">O</option>
-    <option value="9">A+</option>
-    <option value="8">A</option>
-    <option value="7">B+</option>
-    <option value="6">B</option>
-    <option value="5">C</option>
-    <option value="0">U/UA/RA-FAIL</option>
-    <option value="0">W</option>
-  </select>
-  <span class="credit-display" style="flex:0 0 120px;"></span>
-  <button class="remove-subject">X</button>
-`;
+  div.innerHTML = `
+    <input type="text" class="subject-code" placeholder="Subject Code" />
+    <select class="grade">
+      <option value="10">O</option>
+      <option value="9">A+</option>
+      <option value="8">A</option>
+      <option value="7">B+</option>
+      <option value="6">B</option>
+      <option value="5">C</option>
+      <option value="0">U/RA</option>
+    </select>
+    <span class="credit-display"></span>
+    <button class="remove-subject">X</button>
+  `;
 
-    const removeBtn = div.querySelector(".remove-subject");
-    removeBtn.style.background = "#f44336";
-    removeBtn.style.color = "white";
-    removeBtn.style.border = "none";
-    removeBtn.style.borderRadius = "5px";
-    removeBtn.style.cursor = "pointer";
-    removeBtn.style.padding = "5px 10px";
-    removeBtn.style.fontWeight = "bold";
-    removeBtn.onclick = () => div.remove();
-
-    const input = div.querySelector("input");
-    const display = div.querySelector(".credit-display");
-
-    // Show credit from JSON if available
-    input.addEventListener("input", (e) => {
-      const code = e.target.value.trim().toUpperCase();
-      const subject = getSubjectDetails(code);
-    });
-
-    return div;
-  }
-
-  // Event: enter number of subjects
-  numSubjectsInput?.addEventListener("input", () => {
-    const count = parseInt(numSubjectsInput.value);
-    if (isNaN(count) || count <= 0) return;
-
-    subjectsContainer.innerHTML = ""; // clear existing
-    for (let i = 0; i < count; i++) {
-      subjectsContainer.appendChild(createSubjectCard());
-    }
-  });
-
-  // Calculate GPA
-  calculateGpaBtn?.addEventListener("click", () => {
-    let total = 0,
-      totalCredits = 0;
-
-    const cards = subjectsContainer.querySelectorAll(".subject-card");
-    for (let card of cards) {
-      const code = card.querySelector("input").value.trim().toUpperCase();
-      const grade = parseFloat(card.querySelector("select").value);
-
-      const subject = getSubjectDetails(code);
-      if (!subject) {
-        alert(`Subject not found: ${code}`);
-        return;
-      }
-
-      totalCredits += subject.credit;
-      total += grade * subject.credit;
-    }
-
-    const gpa = totalCredits ? (total / totalCredits).toFixed(2) : 0;
-    document.getElementById("resultGPA").innerText = `Your GPA is: ${gpa}`;
-  });
-
-  // Download GPA PDF
-  downloadGpaBtn?.addEventListener("click", async () => {
-    const resultDiv = document.getElementById("resultGPA");
-
-    if (!resultDiv || !resultDiv.innerText.trim()) {
-      alert("Calculate GPA first!");
-      return;
-    }
-
-    if (!window.html2canvas || !window.jspdf) {
-      alert("PDF libraries not loaded");
-      return;
-    }
-
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF("p", "pt", "a4");
-
-    // Use pdf-area if exists, else container
-    const content =
-      document.querySelector(".pdf-area") ||
-      document.querySelector(".container");
-
-    const canvas = await html2canvas(content, {
-      scale: 2,
-      useCORS: true,
-    });
-
-    const imgData = canvas.toDataURL("image/png");
-
-    const pageWidth = pdf.internal.pageSize.getWidth();
-    const pageHeight = pdf.internal.pageSize.getHeight();
-
-    const imgWidth = pageWidth - 40;
-    const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-    pdf.addImage(imgData, "PNG", 20, 20, imgWidth, imgHeight);
-
-    // GPA text (inside page safely)
-    pdf.setFontSize(14);
-    pdf.setTextColor(30, 144, 255);
-    pdf.text(resultDiv.innerText, 20, pageHeight - 30);
-
-    pdf.save("GPA_Result.pdf");
-  });
+  div.querySelector(".remove-subject").onclick = () => div.remove();
+  return div;
 }
 
-/* ================= CGPA PAGE ================= */
+numSubjectsInput?.addEventListener("input", () => {
+  const count = parseInt(numSubjectsInput.value);
+  if (!count || count <= 0) return;
+  subjectsContainer.innerHTML = "";
+  for (let i = 0; i < count; i++) {
+    subjectsContainer.appendChild(createSubjectCard());
+  }
+});
+
+calculateGpaBtn?.addEventListener("click", () => {
+  let total = 0,
+    credits = 0;
+
+  const cards = document.querySelectorAll(".subject-card");
+  for (let card of cards) {
+    const code = card.querySelector(".subject-code").value.trim().toUpperCase();
+    const grade = parseFloat(card.querySelector(".grade").value);
+    const subject = getSubjectDetails(code);
+
+    if (!subject) {
+      alert(`Invalid subject code: ${code}`);
+      return;
+    }
+
+    credits += subject.credit;
+    total += grade * subject.credit;
+  }
+
+  const gpa = credits ? (total / credits).toFixed(2) : 0;
+  document.getElementById("resultGPA").innerText = `Your GPA is: ${gpa}`;
+});
+
+/* ================= PDF INPUT FIX (NO FONT CUT) ================= */
+function replaceInputsForPDF(container) {
+  const elements = container.querySelectorAll("input, select");
+  const replaced = [];
+
+  elements.forEach((el) => {
+    const span = document.createElement("span");
+    span.innerText =
+      el.tagName === "SELECT"
+        ? el.options[el.selectedIndex]?.text || ""
+        : el.value || "";
+
+    const style = window.getComputedStyle(el);
+    span.style.display = "inline-flex";
+    span.style.alignItems = "center";
+    span.style.minHeight = style.height;
+    span.style.minWidth = style.width;
+    span.style.padding = style.padding;
+    span.style.border = style.border;
+    span.style.fontSize = style.fontSize;
+    span.style.fontFamily = style.fontFamily;
+    span.style.color = style.color;
+    span.style.background = "#fff";
+    span.style.boxSizing = "border-box";
+
+    replaced.push({ original: el, span });
+    el.replaceWith(span);
+  });
+
+  return replaced;
+}
+
+function restoreInputs(replaced) {
+  replaced.forEach(({ original, span }) => span.replaceWith(original));
+}
+
+/* ================= GPA PDF (DESKTOP + MOBILE FIX) ================= */
+downloadGpaBtn?.addEventListener("click", async () => {
+  const result = document.getElementById("resultGPA");
+  if (!result?.innerText.trim()) {
+    alert("Calculate GPA first!");
+    return;
+  }
+
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF("p", "pt", "a4");
+  const content = document.querySelector(".pdf-area");
+
+  const replaced = replaceInputsForPDF(content);
+
+  const canvas = await html2canvas(content, {
+    scale: 2,
+    scrollY: -window.scrollY,
+    windowWidth: content.scrollWidth,
+  });
+
+  restoreInputs(replaced);
+
+  const imgData = canvas.toDataURL("image/png");
+  const pageWidth = pdf.internal.pageSize.getWidth();
+  const margin = 20;
+  const imgWidth = pageWidth - margin * 2;
+  const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+  let heightLeft = imgHeight;
+  let position = margin;
+
+  pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+  heightLeft -= pdf.internal.pageSize.getHeight();
+
+  while (heightLeft > 0) {
+    pdf.addPage();
+    position = heightLeft - imgHeight + margin;
+    pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+    heightLeft -= pdf.internal.pageSize.getHeight();
+  }
+
+  pdf.save("GPA_Result.pdf");
+});
+
+/* ================= CGPA ================= */
 const numSemSelect = document.getElementById("numSemesters");
 const gpaInputsContainer = document.getElementById("gpa-inputs-container");
 const calculateCgpaBtn = document.getElementById("calculateCGPA");
 const downloadCgpaBtn = document.getElementById("downloadCGPA");
 
-if (numSemSelect) {
-  function createSemInput(num) {
-    const div = document.createElement("div");
-    div.className = "form-grid sem-row";
-    div.style.alignItems = "center";
-    div.style.marginBottom = "10px";
-    div.style.display = "flex";
-    div.style.gap = "10px";
+numSemSelect?.addEventListener("change", () => {
+  gpaInputsContainer.innerHTML = "";
+  for (let i = 1; i <= numSemSelect.value; i++) {
+    gpaInputsContainer.innerHTML += `
+      <div class="form-grid">
+        <label>Semester ${i} GPA:</label>
+        <input type="number" min="0" max="10" step="0.01">
+      </div>`;
+  }
+});
 
-    div.innerHTML = `
-      <label>Semester ${num} GPA:</label>
-      <input type="number" min="0" max="10" step="0.01" placeholder="Enter GPA" style="flex:2;">
-      <button class="delete-sem">X</button>
-    `;
+calculateCgpaBtn?.addEventListener("click", () => {
+  const inputs = gpaInputsContainer.querySelectorAll("input");
+  let total = 0;
+  inputs.forEach((i) => (total += parseFloat(i.value || 0)));
+  const cgpa = inputs.length ? (total / inputs.length).toFixed(2) : 0;
+  document.getElementById("resultCGPA").innerText = `Your CGPA is: ${cgpa}`;
+});
 
-    const btn = div.querySelector(".delete-sem");
-    btn.style.background = "#ffffff";
-    btn.style.color = "#d70000";
-    btn.style.border = "none";
-    btn.style.borderRadius = "5px";
-    btn.style.cursor = "pointer";
-    btn.style.padding = "5px 10px";
-    btn.style.fontWeight = "bold";
-    btn.onclick = () => div.remove();
-
-    return div;
+/* ================= CGPA PDF (SAME FIX) ================= */
+downloadCgpaBtn?.addEventListener("click", async () => {
+  const result = document.getElementById("resultCGPA");
+  if (!result?.innerText.trim()) {
+    alert("Calculate CGPA first!");
+    return;
   }
 
-  numSemSelect.addEventListener("change", () => {
-    gpaInputsContainer.innerHTML = "";
-    const num = parseInt(numSemSelect.value);
-    for (let i = 1; i <= num; i++)
-      gpaInputsContainer.appendChild(createSemInput(i));
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF("p", "pt", "a4");
+  const content = document.querySelector(".pdf-area");
+
+  const replaced = replaceInputsForPDF(content);
+
+  const canvas = await html2canvas(content, {
+    scale: 2,
+    scrollY: -window.scrollY,
+    windowWidth: content.scrollWidth,
   });
 
-  calculateCgpaBtn?.addEventListener("click", () => {
-    const inputs = gpaInputsContainer.querySelectorAll("input");
-    let total = 0,
-      count = 0;
-    for (let input of inputs) {
-      const val = parseFloat(input.value);
-      if (isNaN(val) || val < 0 || val > 10) {
-        alert("Invalid GPA detected");
-        return;
-      }
-      total += val;
-      count++;
-    }
-    const cgpa = count > 0 ? (total / count).toFixed(2) : 0;
-    document.getElementById("resultCGPA").innerText = `Your CGPA is: ${cgpa}`;
-  });
-  //download pdf
-  downloadCgpaBtn?.addEventListener("click", async () => {
-    const resultDiv = document.getElementById("resultCGPA");
-    if (!resultDiv || !resultDiv.innerText.trim()) {
-      alert("Calculate CGPA first!");
-      return;
-    }
+  restoreInputs(replaced);
 
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF("p", "pt", "a4");
+  const imgData = canvas.toDataURL("image/png");
+  const pageWidth = pdf.internal.pageSize.getWidth();
+  const margin = 20;
+  const imgWidth = pageWidth - margin * 2;
+  const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    // IMPORTANT: correct container
-    const element =
-      document.querySelector(".pdf-area") ||
-      document.querySelector(".container");
+  let heightLeft = imgHeight;
+  let position = margin;
 
-    if (!element) {
-      alert("PDF area not found!");
-      return;
-    }
+  pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+  heightLeft -= pdf.internal.pageSize.getHeight();
 
-    const canvas = await html2canvas(element, {
-      scale: 1.5,
-      useCORS: true,
-    });
+  while (heightLeft > 0) {
+    pdf.addPage();
+    position = heightLeft - imgHeight + margin;
+    pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
+    heightLeft -= pdf.internal.pageSize.getHeight();
+  }
 
-    const imgData = canvas.toDataURL("image/png");
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
-    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-    pdf.save("CGPA_Result.pdf");
-  });
-}
+  pdf.save("CGPA_Result.pdf");
+});
